@@ -166,7 +166,18 @@ const gameObject =()=>{
         }
         return names;
      }
-      
+    let playerNumbers = (name)=>{
+        let nums = [];
+        let c;
+        for (const key in g) {
+               if(g[key].teamName === name){ c = g[key].players;
+               for (const k in c) {
+                nums.push(c[k].number)                
+                }
+            }
+               }
+               return nums
+        }     
 
 
 }    
