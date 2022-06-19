@@ -159,6 +159,14 @@ const gameObject =()=>{
         }
         return colors;
     }
+    let teamNames = ()=>{
+        let names = [];
+        for (const key in g) {
+         names.push(g[key].teamName);
+        }
+        return names;
+     }
+      
 
 
 }    
