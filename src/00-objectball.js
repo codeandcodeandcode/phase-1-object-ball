@@ -183,5 +183,20 @@ const gameObject =()=>{
                if(g[key].players[arg]) return g[key].players[arg]
             }
         }
+    function bigShoeRebounds(){
+            let players = [];
+            let nums = [];
+            for (const key in g) {
+                   players.push(g[key].players);
+                }
+                // filtered through players
+                players = Object.values(players[0]);
+                let lg = players.map(e=>e.shoe);
+                let largest = Math.max(...lg);
+                let lgplayer = players.filter(t=>t.shoe===largest);
+                return lgplayer[0].rebounds;
+        }
+        
+
 
 }    
