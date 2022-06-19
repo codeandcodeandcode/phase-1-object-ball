@@ -139,7 +139,13 @@ const gameObject =()=>{
     return retObj;
     }
 
-
+    let g = gameObject();
+    let numPointsScored = (player)=>{
+        for(let key in g) {
+            let a =  g[key].players[player];
+            if(a) return a.points
+        }
+    }
     
 
 }    
