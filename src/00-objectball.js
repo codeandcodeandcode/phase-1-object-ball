@@ -178,6 +178,10 @@ const gameObject =()=>{
                }
                return nums
         }     
-
+    let playerStats = (arg)=>{
+            for (const key in g) {
+               if(g[key].players[arg]) return g[key].players[arg]
+            }
+        }
 
 }    
