@@ -197,6 +197,4 @@ const gameObject =()=>{
                 return lgplayer[0].rebounds;
         }
         
-
-
-}    
+console.log(bigShoeRebounds('Jeff Adrien')); 
