@@ -152,5 +152,13 @@ const gameObject =()=>{
             if(a) return a.shoe
         }
     }
+    let teamColors = (arg)=>{
+        let colors = [];
+        for (const key in g) {
+            if(g[key].teamName == arg) colors = g[key].colors;
+        }
+        return colors;
+    }
+
 
 }    
