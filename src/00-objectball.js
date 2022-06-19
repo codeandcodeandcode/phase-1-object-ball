@@ -146,6 +146,11 @@ const gameObject =()=>{
             if(a) return a.points
         }
     }
-    
+    let shoeSize = (player)=>{
+        for(let key in g) {
+            let a =  g[key].players[player];
+            if(a) return a.shoe
+        }
+    }
 
 }    
